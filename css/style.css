@@ -1,6 +1,11 @@
 * {
     font-family: "Poppins", sans-serif;
+}
+
+
+body, header {
     background-color: var(--secondary-color);
+
 }
 
 :root {
@@ -45,7 +50,79 @@
 }
 
 .nav__menu li a:hover {
-    /* background-color:  var(--primary-color); */
     border: 1px solid #2BDEFD;
     color: #2BDEFD;
+}
+
+/* CONTATO */
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario__content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--seconady-color);
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    ;
+    border-radius: 20px;
+    row-gap: 10px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-form label {
+    color: #2BDEFD;
+    margin: .8rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.campo-form input {
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    color: #fff;
+    border: 1px solid #2BDEFD;
+}
+
+.campo-form :where(textarea, select) {
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    border: 1px solid #2BDEFD;
+    color: #fff;
+}
+
+.campo-form textarea::placeholder {
+    color: #fff;
+}
+
+.campo-form input::placeholder {
+    color: #fff;
+}
+
+.campo-form .btn-send {
+    color: var(--secondary-color);
+    background-color: #2BDEFD;
+    border: 1px solid #2BDEFD;
+    transition: .5s;
+    padding: .6rem 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.campo-form .btn-send:hover {
+    color: #2BDEFD;
+    background-color: transparent;
+    border: 1px solid #2BDEFD;
 }
