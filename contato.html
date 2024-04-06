@@ -26,12 +26,47 @@
             <li>
                 <a href="contato.html">Contato</a>
             </li>
+            <li>
+                <a href="planos.html">Planos</a>
+            </li>
         </ul>
     </nav>
 </header>
 
 <body>
-   
+    <form class="formulario">
+        <div class="formulario__content">
+            <div class="campo-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Insira seu nome">
+            </div>
+            <div class="campo-form">
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Insira seu e-mail">
+            </div>
+            <div class="campo-form">
+                <label for="telefone">Telefone:</label>
+                <input placeholder="(00) 000000-0000" type="tel" name="telefone" id="telefone" value="" required=""
+                    maxlength="15">
+            </div>
+            <div class="campo-form">
+                <label for="Assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="planos">Dúvidas sobre planos</option>
+                    <option value="pagamento">Formas de Pagamento</option>
+                    <option value="sugestao">Sugestões</option>
+                    <option value="ouvidoria">Ouvidoria</option>
+                </select>
+            </div>
+            <div class="campo-form">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" placeholder="Digite Sua mensagem" id="mensagem"></textarea>
+            </div>
+            <div class="campo-form">
+                <button class="btn-send" type="submit">Enviar</button>
+            </div>
+        </div>
+    </form>
 </body>
 
 
