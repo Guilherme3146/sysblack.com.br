@@ -2,15 +2,77 @@
     font-family: "Poppins", sans-serif;
 }
 
+.container {
+    max-width: 1920px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0;
+    clear: both;
+}
 
-body, header {
+body {
+    margin: 0
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    --spacing: 0px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.grid-col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    width: 100%;
+}
+
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: var(--wrapper-width);
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.title__nav {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    ;
+    color: #fff;
+    padding: 10px;
+    padding-top: 30px;
+    margin: 0 0 20px  0;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+body,
+header {
     background-color: var(--secondary-color);
 
 }
 
 :root {
     --primary-color: #01080E;
-    --secondary-color:  #011727;
+    --secondary-color: #011727;
+    --wrapper-width: 1180px;
 }
 
 .nav-bar {
@@ -20,9 +82,10 @@ body, header {
     justify-content: space-around;
     align-items: center;
     margin: 0;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.nav-bar img{
+.nav-bar img {
     height: 90px;
     width: 180px;
 }
@@ -36,9 +99,10 @@ body, header {
     display: flex;
 }
 
-.nav__menu li a{
+.nav__menu li a {
     text-decoration: none;
     color: #fff;
+    background-color: var(--secondary-color);
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 2px;
@@ -71,6 +135,15 @@ body, header {
     ;
     border-radius: 20px;
     row-gap: 10px;
+    width: 400px;
+
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .campo-form {
@@ -125,4 +198,216 @@ body, header {
     color: #2BDEFD;
     background-color: transparent;
     border: 1px solid #2BDEFD;
+}
+
+.atendimento-cliente {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.atendimento-cliente__content {
+    position: relative;
+    padding: 20px 30px;
+    display: flex;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    ;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.atendimento-cliente__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.atendimento-cliente--contato .atendimento-cliente__title {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.atendimento-cliente__title {
+    color: #fff;
+}
+
+.atendimento-cliente address span {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.atendimento-cliente__address {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    row-gap: 10px;
+}
+
+.atendimento-cliente__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atendimento-cliente__image img {
+    max-height: 230px;
+    max-width: 179px;
+}
+
+.atendimento-cliente__cover {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contato .atendimento-cliente address {
+    margin: 24px 0 0 0;
+}
+
+.mapa__contato iframe {
+    height: 180px;
+    max-width: 100%;
+}
+
+/*PLANOS*/
+
+.plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    max-width: 300px;
+}
+
+.planos__title {
+    font-size: 32px;
+    color: #fff;
+
+}
+
+.planos__span {
+    font-size: 18px;
+    margin: 0;
+}
+
+.plan strong {
+    font-weight: 600;
+    color: #FFF;
+}
+
+.plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    ;
+    border-radius: 12px;
+    position: relative;
+}
+
+.plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bed6fb;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.plan .pricing small {
+    color: #FFF;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+}
+
+.plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FFF;
+}
+
+.plan .title+* {
+    margin-top: 0.75rem;
+}
+
+.plan .info+* {
+    margin-top: 1rem;
+}
+
+.plan .features {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan .features li+* {
+    margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.plan .features+* {
+    margin-top: 1.25rem;
+}
+
+.plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.plan .button {
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.plan .button:hover,
+.plan .button:focus {
+    background-color: var(--secondary-color);
 }

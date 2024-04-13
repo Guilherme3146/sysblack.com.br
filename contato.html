@@ -34,39 +34,80 @@
 </header>
 
 <body>
-    <form class="formulario">
-        <div class="formulario__content">
-            <div class="campo-form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Insira seu nome">
-            </div>
-            <div class="campo-form">
-                <label for="email">E-mail:</label>
-                <input type="email" placeholder="Insira seu e-mail">
-            </div>
-            <div class="campo-form">
-                <label for="telefone">Telefone:</label>
-                <input placeholder="(00) 000000-0000" type="tel" name="telefone" id="telefone" value="" required=""
-                    maxlength="15">
-            </div>
-            <div class="campo-form">
-                <label for="Assunto">Assunto:</label>
-                <select name="assunto" id="assunto">
-                    <option value="planos">Dúvidas sobre planos</option>
-                    <option value="pagamento">Formas de Pagamento</option>
-                    <option value="sugestao">Sugestões</option>
-                    <option value="ouvidoria">Ouvidoria</option>
-                </select>
-            </div>
-            <div class="campo-form">
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" placeholder="Digite Sua mensagem" id="mensagem"></textarea>
-            </div>
-            <div class="campo-form">
-                <button class="btn-send" type="submit">Enviar</button>
+    <div class="title__nav">
+        Contato
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <h2 class="planos__title"><span class="planos__span">Fale </span><br> Conosco</h2>
+            <div class="row gap-20">
+                <form class="formulario">
+                    <div class="formulario__content">
+                        <div class="campo-form">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" placeholder="Insira seu nome">
+                        </div>
+                        <div class="campo-form">
+                            <label for="email">E-mail:</label>
+                            <input type="email" placeholder="Insira seu e-mail">
+                        </div>
+                        <div class="campo-form">
+                            <label for="telefone">Telefone:</label>
+                            <input placeholder="(00) 000000-0000" type="tel" name="telefone" id="telefone" value=""
+                                required="" maxlength="15">
+                        </div>
+                        <div class="campo-form">
+                            <label for="Assunto">Assunto:</label>
+                            <select name="assunto" id="assunto">
+                                <option value="planos">Dúvidas sobre planos</option>
+                                <option value="pagamento">Formas de Pagamento</option>
+                                <option value="sugestao">Sugestões</option>
+                                <option value="ouvidoria">Ouvidoria</option>
+                            </select>
+                        </div>
+                        <div class="campo-form">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" placeholder="Digite Sua mensagem" id="mensagem"></textarea>
+                        </div>
+                        <div class="campo-form">
+                            <button class="btn-send" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="atendimento-cliente">
+                    <div class="atendimento-cliente__content grid-col-2">
+                        <div class="atendimento-cliente__text">
+                            <h2 class="atendimento-cliente__title">Contamos com uma equipe <br> técnica sempre preparada
+                                <br> para te atender
+                            </h2>
+                            <address class="atendimento-cliente__address">
+                                <span class="atendimento-cliente__item">
+                                    <img src="https://www.m3xtecnologia.com.br/imagens/icones/icon-whatsapp.svg"
+                                        alt="WhatsApp" title="WhatsApp" loading="lazy"> (21) 98066-0118 </span>
+                                <span class="atendimento-cliente__item">
+                                    <img src="https://www.m3xtecnologia.com.br/imagens/icones/icon-phone.svg"
+                                        alt="Clique e Ligue" title="Clique e Ligue" loading="lazy"> (21) 2229-5958
+                                </span>
+                                <span class="atendimento-cliente__item"><img
+                                        src="https://www.m3xtecnologia.com.br/imagens/icones/icon-email.svg"
+                                        alt="Envie um E-mail" title="Envie um E-mail">
+                                    contato@sysblack.com.br</span>
+                            </address>
+                        </div>
+                        <div class="atendimento-cliente__image">
+                            <img src="imagens/contato/atendimento-cliente.png" alt="Contato" title="Contato">
+                        </div>
+                    </div>
+                    <div class="mapa__contato">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58472.94859339252!2d-46.78992517832032!3d-23.65594909999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51a36a2b5357%3A0x6375faa71efa063e!2sUniversidade%20Cruzeiro%20do%20Sul%20-%20Campus%20Santo%20Amaro!5e0!3m2!1spt-BR!2sbr!4v1712964399047!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-    </form>
+    </div>
 </body>
 
 
