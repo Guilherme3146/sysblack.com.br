@@ -412,3 +412,8 @@ header {
 .plan .button:focus {
     background-color: var(--secondary-color);
 }
+
+.p_planosgerais{
+    color: white;
+    
+}
