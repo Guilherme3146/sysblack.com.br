@@ -416,6 +416,8 @@ header {
 .planos_subtitle{
     color: white;
 }
+
+
 .p_planosgerais{
     color: #FFF;
     margin-block-start: 1em;
@@ -433,8 +435,3 @@ header {
     display: flex;
     justify-content: center;
 }    
-
-.planos_container :is(h2, h3 p) {
-    margin: 0;
-    padding: 0;
-}
