@@ -418,13 +418,23 @@ header {
 }
 .p_planosgerais{
     color: #FFF;
-    display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+    text-align: justify;
 }
 .planos__img{
-    
+    display: flex;
+    justify-content: center;
+}    
+
+.planos_container :is(h2, h3 p) {
+    margin: 0;
+    padding: 0;
 }
