@@ -372,7 +372,7 @@ header {
     align-items: center;
     justify-content: center;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 20px;
     height: 20px;
 }
@@ -435,3 +435,57 @@ header {
     display: flex;
     justify-content: center;
 }    
+
+
+/* BANNER */
+
+.banner-home img{
+    width: 1920px;
+    height: 500px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+}
+
+/* QUEM SOMOS */
+
+.quem-somos-home {
+    background: url('imagens/home/quem-somos-home.png');
+}
+
+.quem-somos-home__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 30px;
+
+    color: #fff;
+}
+
+.quem-somos-home__content :is(h2, p) {
+    margin: 0;
+    padding: 0;
+}
+
+.quem-somos-home__content a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: .5s;
+    padding: .4rem .6rem;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    width: fit-content;
+}
+
+.quem-somos-home__content a:hover {
+    border: 1px solid #2BDEFD;
+    color: #2BDEFD;
+}
+
+.quem-somos-home__img {
+    display: flex;
+    justify-content: center;
+}
