@@ -417,8 +417,7 @@ header {
 /* BANNER */
 
 .banner-home img{
-    width: 1920px;
-    height: 500px;
+    width: 100%;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
 }
 
