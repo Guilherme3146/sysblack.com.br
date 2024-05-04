@@ -489,3 +489,28 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.quem-somos-geral{
+    color: #FFF;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+    text-align: justify;
+}
+.quem-somos-geral-ul{
+    color: white;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    display: grid;
+    width: 50%;
+    text-align: justify;
+}
