@@ -4,40 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planos</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../sysblack.com.br/css/style.css">
+    <link rel="stylesheet" href="../sysblack.com.br/css/header.css">
+    <link rel="stylesheet" href="../sysblack.com.br/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Planos</title>
 </head>
 
+<header>
+    <nav id="navbar">
+        <img src="imagens/logo-empresa.png" alt="Logo" title="Logo">
+        <ul id="nav_list">
+            <li class="nav-item active">
+                <a href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="quem-somos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+                <a href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a href="planos.html">Planos</a>
+            </li>
+        </ul>
+
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="nav-item active">
+                <a href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="quem-somos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+                <a href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a href="planos.html">Planos</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
 <body>
-    <header>
-        <nav class="nav-bar">
-            <img src="imagens/logo-empresa.png" alt="Logo" title="Logo">
-            <ul class="nav__menu">
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="quem-somos.html">Quem Somos</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-                <li>
-                    <a href="planos.html">Planos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
     <div class="title__nav">
         Planos
-    </div>
+    </div> 
+    
     <div class="container">
         <div class="wrapper">
             <h2 class="planos__title"><span class="planos__span">Conheça </span><br> nossos planos</h2>
@@ -50,7 +80,8 @@
                             </span>
                         </span>
                         <p class="title">Guardião Digital</p>
-                        <p class="info">Um plano inicial que oferece proteção essencial para indivíduos e pequenas empresas de forma básica, incluindo os seguintes benefícios:</p>
+                        <p class="info">Um plano inicial que oferece proteção essencial para indivíduos e pequenas
+                            empresas de forma básica, incluindo os seguintes benefícios:</p>
                         <ul class="features">
                             <li>
                                 <span class="icon">
@@ -101,7 +132,8 @@
                             </span>
                         </span>
                         <p class="title">Sentinela Empresarial</p>
-                        <p class="info">Um plano intermediário com recursos avançados projetados para empresas de médio porte possuindo:</p>
+                        <p class="info">Um plano intermediário com recursos avançados projetados para empresas de médio
+                            porte possuindo:</p>
                         <ul class="features">
                             <li>
                                 <span class="icon">
@@ -152,7 +184,8 @@
                             </span>
                         </span>
                         <p class="title">Fortaleza Corporativa</p>
-                        <p class="info">Nosso plano premium para grandes empresas oferece um conjunto de serviços completo de segurança cibernética:</p>
+                        <p class="info">Nosso plano premium para grandes empresas oferece um conjunto de serviços
+                            completo de segurança cibernética:</p>
                         <ul class="features">
                             <li>
                                 <span class="icon">
@@ -198,6 +231,28 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Guilherme Melo
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascript/script.js"></script>
 </body>
 
 </html>
