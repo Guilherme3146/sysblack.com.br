@@ -609,3 +609,12 @@ header {
 @media only screen {
     
 }
+
+.imagens-planos{
+    flex: 1 0 calc(50% - var(--spacing));
+    max-width: calc(50% - var(--spacing) / 2);
+    display: flex;
+    justify-content:center;
+    max-height: 300px;
+    max-width: 400px;
+    }
