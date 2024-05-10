@@ -410,16 +410,6 @@ header {
 
 .p_planosgerais{
     color: #FFF;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    width: 100%;
-    text-align: justify;
 }
 .planos__img{
     display: flex;
@@ -606,8 +596,35 @@ header {
     display: none;
 }
 
-@media only screen {
+@media only screen and (max-width: 1180px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
+    .atendimento-cliente__image img{
+        display: none;
+    }
+    .banner-home img{
+        display: none;
+    }
+    .quem-somos-home__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
 }
 
 .imagens-planos{
@@ -615,6 +632,20 @@ header {
     max-width: calc(50% - var(--spacing) / 2);
     display: flex;
     justify-content:center;
-    max-height: 300px;
-    max-width: 400px;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    padding-left: 70px;
+}
+
+.quem-somos-p{
+        color: #FFF;
+        
     }
+
+.quem-somos-h3{
+    color: #FFF;
+}    
+.quem-somos-h2{
+    color: #FFF;
+}

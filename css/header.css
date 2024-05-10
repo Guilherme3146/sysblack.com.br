@@ -48,8 +48,8 @@ header {
 
 #navbar img {
     height: 90px;
-    width: 180px;
-    filter: brightness(100);
+    width: 220px;
+    
 }
 
 #mobile_btn {
@@ -98,4 +98,4 @@ header {
 
     }
 
-}
+} 
