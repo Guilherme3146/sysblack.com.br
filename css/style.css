@@ -2,6 +2,9 @@
     font-family: "Poppins", sans-serif;
 }
 
+.fonte_nav{
+    font-size: 25px;
+}
 .container {
     max-width: 1920px;
     width: 100%;
@@ -13,7 +16,7 @@
 }
 
 body {
-    margin: 0
+    margin: 0px
 }
 
 h1::before {
@@ -90,7 +93,7 @@ span {
     padding: 10px;
     padding-top: 30px;
     margin: 0 0 20px  0;
-    font-size: 28px;
+    font-size: 58px;
     font-weight: bold;
     position: relative;
 }
